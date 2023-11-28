@@ -1,0 +1,99 @@
+// Ama status tuu!
+
+100 - Info Response
+200 - You are good
+300 - Redirects
+400 - Client errors
+500 - Server errors
+
+res.statusCode = ??
+
+//Path Set
+
+let path = './views';
+
+// Read File
+
+rs.read(path, (err,data) =>{
+	if(err){
+		console.log(err);
+		res.end();
+	}
+	else{
+		res.write(data);
+		res.end();
+	}
+	
+// Express
+
+Just "res.send"
+	
+// Link HTML:
+
+Just type "res.sendFile('Path', {root: __dirmname });
+
+// Register ejs
+
+app.set('view-engine', 'ejs');
+
+//Set the Views Folder
+
+app.set('views', 'path');
+
+//New Form of printing this... In ejs
+
+app.render('JustTheName');
+
+//ejs tags
+
+Open: <% %>
+
+// I Guess we display in the HTML like this:
+
+<%= ??? %>
+
+// Allowing CSS in Node:
+
+app.use(express.static());
+app.use(morgan());
+
+// Connect to MongoDB
+
+mongoose.connect('**Paste the thing**', { useNewUrlParser: true, useUnifiedTopology: true)
+	.then((result) => console.log("**Connect Verification Thingy**");
+	
+// Instead of success use this for errors
+
+	.catch((err) => console.log(err));
+
+//Creating a new Schema
+
+Schema = mongoose.Schema;
+
+blogSchem = new Schema({	
+	title: {
+		type: String,
+		required: true;
+	}...
+})
+
+// To save, You literally just write:
+
+thename.save()
+	.then((result) => {
+		console.log(result)
+	})
+	.catch((err) => {
+		console.log(err)
+	})
+	
+// To support POST
+
+app.use(urlEconded({Extended: true}));
+
+// Specific Id Words
+
+req.params.id
+
+
+30.9
